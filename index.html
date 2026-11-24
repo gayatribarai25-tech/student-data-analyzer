@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Student Marks Analyzer</h1>
+            <p>Student academic performance dashboard</p>
+        </header>
+
+        <!-- Dashboard -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <p>Total Students</p>
+                <h2 id="totalStudents">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Class Average</p>
+                <h2 id="classAverage">0%</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Highest Scorer</p>
+                <h2 id="highestScorer">-</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Lowest Scorer</p>
+                <h2 id="lowestScorer">-</h2>
+            </div>
+
+        </section>
+
+        <!-- Student Table -->
+        <section class="table-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Student Records</h2>
+                    <p>Complete marks and performance report</p>
+                </div>
+
+                <input type="text" id="searchInput"
+                    placeholder="Search student...">
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Math</th>
+                            <th>English</th>
+                            <th>Science</th>
+                            <th>History</th>
+                            <th>Hindi</th>
+                            <th>Total</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
